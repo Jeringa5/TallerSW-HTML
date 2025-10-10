@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="sp">
-<html>
+<html data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +10,105 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
             crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <h1>Taller HTML</h1>
-            Contenedor
-            <div class="row">
-                <div class="col">Fila</div>
+        <!--SOBRE MI-->
+        <section class="info_personal">
+            <div class="container">
+                <div class="row">
+                    <h1>Hola, soy Jeronimo👋</h1>
+                    <div class="col-6">
+                        <h6>Ingeniero de sistemas</h6>
+                    </div>
+                    <div class="col-6">
+                        <h6>Ingeniero biomedico</h6>
+                    </div>
+                    <img class=foto-perfil src="FotoJero.jpeg" alt="Jero"/>
+                    
+                    <h3>Sobre mi</h3>
+
+                    <div class="col-6">
+                        Estudio ingenieria de sistemas y computacion en la Universidad de los Andes, voy en cuarto semestre y estoy iniciando en el mundo del desarrollo web.
+                    </div>
+                    <div class="col-6">
+                        Estudio ingenieria biomedica en la Universidad de los Andes, voy en segundo semestre y mi sueño es integrar la tecnologia y los sistemas con el mundo de la medicina.
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col">Columna</div>
-                <div class="col-8">Columna</div>
-                <div class="col">Columna</div>
+        </section>
+
+        <!--HABILIDADES-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h3>Habilidades</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-code"></i> C++</li>
+                    </ul>
+                </div>  
             </div>
-        </div>
+        </section>
+
+        <br/>
+
+        <!--LINKS A MIS REDES-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h3>Donde encontrarme</h3>
+                    <div class="col-6">
+                        <a href="https://github.com/Jeringa5" target="_blank">
+                            <i class="fab fa-github"></i> Mi perfil de GitHub
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="https://www.linkedin.com/in/jeronimo-lopez-852b20297/" target="_blank">
+                            <i class="fab fa-linkedin"></i> Mi perfil de LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br/>
+
+        <!--FORMULARIO-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h3> Contactame </h3>
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Nombre:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu nombre" name="email">
+                        </div>
+                        <div class="mb-3">
+                        <label for="pwd" class="form-label">Email:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu email" name="pswd">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">¿Como te puedo ayudar?:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="¿Dime, como puedo ayudarte?" name="pswd">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
 
 <!--Comentario en HTML-->
-<!-- Paso 1:
-    Diseñar y plantear la estructura de la pagina que se desea hacer -->
-<!-- Paso 2:
-    Crear un archivo index.html y agregar la estructura basica de HTML5 -->
+<!-- Tareas:
+    1. Diseñe la maqueta de la página que va a construir
+    2. Plasme su diseño en una grilla de Bootstrap
+    3. Defina la zona que va a contener al menos una imagen y muéstrela.
+    4. Defina la zona que va a contener información en forma de párrafos. Ese texto debe tener al menos un enlace a una página externa.
+    5. Defina la zona que va a contener una lista de elementos
+    6. Defina una zona que contenga un formulario para que los visitantes a la página se suscriban para recibir más información. -->
