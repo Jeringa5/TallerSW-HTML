@@ -25,11 +25,54 @@
     width: 500px;
     height: auto;
     border-radius: 10px;
-    margin: 0px auto 10px;
+    margin: 0px auto 0px;
     display: block;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); 
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
+.foto_nombre{
+    background-color: rgb(17, 28, 28);
 }
 
 .info_personal{
-    background-color: rgb(25, 42, 42);
+    text-align: center
+}
+
+.contacto{
+    background-color: rgb(17, 28, 28);
+}
+
+.degrade_arriba_abajo{
+    height: 80px;
+    background: linear-gradient(rgb(17, 28, 28), #212529);
+}
+
+.degrade_abajo_arriba{
+    height: 80px;
+    background: linear-gradient(#212529, rgb(17, 28, 28));
+}
+
+.social-link {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+  
+.social-link:hover {
+    color: #0a66c2;
+    transform: scale(1.1);
+}
+
+.caja-transparente {
+    background-color: rgba(255, 255, 255, 0.15); 
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }

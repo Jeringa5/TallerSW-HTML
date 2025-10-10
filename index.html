@@ -4,52 +4,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Página Web</title>
+        <title>Jeronimo Lopez</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
             crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <!--SOBRE MI-->
-        <section class="info_personal">
+        <!--FOTO Y NOMBRE-->
+        <section class="foto_nombre">
             <div class="container">
+                <br/>
                 <div class="row">
                     <h1>Hola, soy Jeronimo👋</h1>
-                    <div class="col-6">
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-5 caja-transparente">
                         <h6>Ingeniero de sistemas</h6>
                     </div>
-                    <div class="col-6">
+                    <div class="col-2"></div>
+                    <div class="col-5 caja-transparente">
                         <h6>Ingeniero biomedico</h6>
                     </div>
-                    <img class=foto-perfil src="FotoJero.jpeg" alt="Jero"/>
-                    
-                    <h3>Sobre mi</h3>
 
-                    <div class="col-6">
-                        Estudio ingenieria de sistemas y computacion en la Universidad de los Andes, voy en cuarto semestre y estoy iniciando en el mundo del desarrollo web.
-                    </div>
-                    <div class="col-6">
-                        Estudio ingenieria biomedica en la Universidad de los Andes, voy en segundo semestre y mi sueño es integrar la tecnologia y los sistemas con el mundo de la medicina.
-                    </div>
+                    <br/>
+
+                    <img class=foto-perfil src="FotoJero.jpeg" alt="Jero"/>
                 </div>
             </div>
         </section>
 
-        <!--HABILIDADES-->
-        <section>
+        <section class="degrade_arriba_abajo"></section>
+
+        <!--SOBRE MI-->
+        
+        <section class="info_personal">
             <div class="container">
+                <h3>Sobre mi</h3>
+                <div class="row text-dark">
+                    <div class="col-5 caja-transparente">
+                      Estudio ingeniería de sistemas y computación en la Universidad de los Andes, voy en cuarto semestre y estoy iniciando en el mundo del desarrollo web, estoy demasiado entusiasmado por aprender estas nuevas tecnologias.
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-5 caja-transparente">
+                      Estudio ingeniería biomédica en la Universidad de los Andes, voy en segundo semestre y mi sueño es integrar nuevos sistemas junto con el desarrollo de nuevas tecnologias ligadas al mundo de la medicina para crear un mundo mejor.
+                    </div>
+                </div>
+
+                <br/>
+
                 <div class="row">
                     <h3>Habilidades</h3>
                     <ul>
                         <li><i class="fab fa-html5"></i> HTML</li>
                         <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
                         <li><i class="fab fa-js"></i> JavaScript</li>
                         <li><i class="fab fa-python"></i> Python</li>
                         <li><i class="fab fa-java"></i> Java</li>
                         <li><i class="fas fa-code"></i> C++</li>
+                        <li><i class="fas fa-microchip"></i> Assembly</li>
                     </ul>
                 </div>  
             </div>
@@ -62,14 +79,19 @@
             <div class="container">
                 <div class="row">
                     <h3>Donde encontrarme</h3>
-                    <div class="col-6">
-                        <a href="https://github.com/Jeringa5" target="_blank">
-                            <i class="fab fa-github"></i> Mi perfil de GitHub
+                    <div class="col-4">
+                        <a href="https://github.com/Jeringa5" target="_blank" class="social-link">
+                            <i class="fa-brands fa-github fa-2x"></i>
                         </a>
                     </div>
-                    <div class="col-6">
-                        <a href="https://www.linkedin.com/in/jeronimo-lopez-852b20297/" target="_blank">
-                            <i class="fab fa-linkedin"></i> Mi perfil de LinkedIn
+                    <div class="col-4">
+                        <a href="https://www.linkedin.com/in/jeronimo-lopez-852b20297/" target="_blank" class="social-link">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://www.instagram.com/jero.l_05/" target="_blank" class="social-link">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
                         </a>
                     </div>
                 </div>
@@ -78,19 +100,21 @@
 
         <br/>
 
+        <section class="degrade_abajo_arriba"></section>
+
         <!--FORMULARIO-->
-        <section>
+        <section class="contacto">
             <div class="container">
                 <div class="row">
                     <h3> Contactame </h3>
                     <form action="/action_page.php">
                         <div class="mb-3 mt-3">
-                        <label for="email" class="form-label">Nombre:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu nombre" name="email">
+                            <label for="email" class="form-label">Nombre:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu nombre" name="email">
                         </div>
                         <div class="mb-3">
-                        <label for="pwd" class="form-label">Email:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu email" name="pswd">
+                            <label for="pwd" class="form-label">Email:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu email" name="pswd">
                         </div>
                         <div class="mb-3">
                             <label for="pwd" class="form-label">¿Como te puedo ayudar?:</label>
@@ -100,6 +124,10 @@
                     </form>
                 </div>
             </div>
+
+            <br/>
+            <br/>
+            <br/>
         </section>
     </body>
 </html>
