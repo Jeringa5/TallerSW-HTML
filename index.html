@@ -9,6 +9,7 @@
             rel="stylesheet" 
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
             crossorigin="anonymous">
+        <link rel="shortcut icon" href="pictures/GoblinMachineCard.webp">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
     </head>
@@ -84,19 +85,24 @@
             <div class="container">
                 <div class="row">
                     <h3>Donde encontrarme</h3>
-                    <div class="col-4">
+                    <div class="col-3">
                         <a href="https://github.com/Jeringa5" target="_blank" class="social-link">
                             <i class="fa-brands fa-github fa-2x"></i>
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <a href="https://www.linkedin.com/in/jeronimo-lopez-852b20297/" target="_blank" class="social-link">
                             <i class="fa-brands fa-linkedin fa-2x"></i>
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <a href="https://www.instagram.com/jero.l_05/" target="_blank" class="social-link">
                             <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="mailto:j.lopezm234@uniandes.edu.co" target="_blank" class="social-link">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
                         </a>
                     </div>
                 </div>
@@ -111,20 +117,25 @@
         <section class="contacto">
             <div class="container">
                 <div class="row">
-                    <h3> Contactame </h3>
+                    <h3> Habla conmigo </h3>
                     <form action="/action_page.php">
                         <div class="mb-3 mt-3">
                             <label for="email" class="form-label">Nombre:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu nombre" name="email">
+                            <input type="email" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre">
                         </div>
                         <div class="mb-3">
                             <label for="pwd" class="form-label">Email:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu email" name="pswd">
+                            <input type="password" class="form-control" id="email" placeholder="Ingresa tu email" name="email">
                         </div>
                         <div class="mb-3">
                             <label for="pwd" class="form-label">¿Como te puedo ayudar?:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="¿Dime, como puedo ayudarte?" name="pswd">
+                            <input type="password" class="form-control" id="texto" placeholder="¿Dime, como puedo ayudarte?" name="texto">
                         </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox" name="remember"> Suscribirme para más información
+                            </label>
+                          </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
@@ -134,6 +145,17 @@
             <br/>
             <br/>
         </section>
+
+        <footer class="footer text-center text-light py-4">
+            <div class="container">
+              <p>© 2025 Jerónimo López — Todos los derechos reservados</p>
+              <div class="social-links">
+                <a href="https://github.com/Jeringa5" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeronimo-lopez-852b20297/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:j.lopezm234@uniandes.edu.co"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+        </footer>
     </body>
 </html>
 
