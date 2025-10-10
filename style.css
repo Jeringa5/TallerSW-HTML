@@ -14,12 +14,31 @@ body {
     background-attachment: fixed;
   }
 
+.container_fotos{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.container_fotos:hover > :not(:hover) {
+    opacity: 0.3;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     text-align: center
+}
+
+.col-img{
+    display:flex;
+    justify-content:center;
 }
 
 .row ul {
@@ -37,21 +56,20 @@ body {
     margin-bottom: 20px
 }
 
+
 .foto-perfil {
-    width: 500px;
+    width: 28%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
-    margin: 0px auto 0px;
-    display: block;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); 
-}
-
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
 .foto-perfil:hover {
     transform: scale(1.05);
-}
-
-.foto_nombre{
-    background-color: rgb(18, 29, 29)
+    opacity: 0.95;
 }
 
 .info_personal{
@@ -101,7 +119,7 @@ body {
     letter-spacing: .05em;
     animation:
         typing 3s steps(22, end),
-        blink-caret .75s step-end infinite;
+        blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
